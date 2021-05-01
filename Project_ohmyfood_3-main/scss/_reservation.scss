@@ -1,0 +1,11 @@
+.reservation {
+  background-color: $color-ligthgrey;
+  height: 30rem;
+  &__information {
+    @include flex-2;
+    height: 100%;
+    text-align: center;
+    padding: 2rem 0;
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,27 @@
+body{
+  font-family: "Roboto",sans-serif;
+  font-size: 1.5rem;
+  margin:0;
+}
+
+.h-small{
+  font-weight: 100;
+}
+.h-medium{
+  font-weight: 400;
+}
+.h-big{
+  font-weight: 700;
+}
+
+.h-ftitle{
+  font-family: $font-title;
+}
+
+.h-ftext{
+  font-family: $font-text;
+}
+
+.margin-r{
+  margin-right: 1.5rem;
+}
