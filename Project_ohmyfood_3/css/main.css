@@ -1,5 +1,5 @@
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto",sans-serif;
   font-size: 1.5rem;
   margin: 0;
 }
@@ -39,15 +39,18 @@ body {
           box-shadow: 0px 0px 8px #888888;
   cursor: pointer;
 }
+
 .button:hover {
   -webkit-box-shadow: 0px 3px 1px 3px #afacac;
           box-shadow: 0px 3px 1px 3px #afacac;
 }
+
 .button--grad {
   background: -webkit-gradient(linear, left top, right bottom, from(#ff79da), to(#9356dc));
   background: linear-gradient(to bottom right, #ff79da, #9356dc);
   color: #FFFFFF;
 }
+
 .button--grad:hover {
   background: -webkit-gradient(linear, right top, left bottom, from(#ff93e1), to(#a16be0));
   background: linear-gradient(to bottom left, #ff93e1, #a16be0);
@@ -69,6 +72,7 @@ body {
   -webkit-box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.1);
           box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.1);
 }
+
 .header__logo {
   height: 2.5rem;
 }
@@ -87,6 +91,7 @@ body {
   height: 5rem;
   background-color: #E8E8E8;
 }
+
 .location__icon {
   margin-right: 1.5rem;
 }
@@ -95,6 +100,7 @@ body {
   background-color: #F8F8F8;
   height: 30rem;
 }
+
 .reservation__information {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -117,4 +123,5 @@ body {
 .container {
   margin: 0 auto;
   max-width: 1248px;
-}/*# sourceMappingURL=main.css.map */
+}
+/*# sourceMappingURL=main.css.map */
