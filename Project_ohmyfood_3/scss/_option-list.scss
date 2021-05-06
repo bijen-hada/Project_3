@@ -1,0 +1,39 @@
+.option-list{
+    &__card{
+        margin: 2rem 0rem 2rem 1rem;
+        height: 7rem;
+        background-color: $color-ligthgrey;  
+    
+    &--highlightcolor{
+        background-color: rgba($color-primary, 0.1);
+    }
+    &-title {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        height: 100%;
+        margin: 1rem 0rem;
+    }
+    &-number {
+        background-color: $color-primary;
+        color: $color-white;
+        border-radius: 1000px;
+        position: absolute;
+        padding: .25rem .75rem;
+        top: 50%;
+        left: 0%;
+        transform: translate(-50%, -50%)
+    }
+    &-icon {
+        color: black;
+        width: 10px;
+        margin: 0rem 3rem;
+        &--highlightcolor{
+            color: $color-primary;
+        }
+    }
+}
+
+}
+
+
