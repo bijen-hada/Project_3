@@ -2,12 +2,15 @@
 @import './utils/mixin';
 @import './base/typography';
 @import './component/button';
-@import 'header';
-@import 'location';
-@import 'reservation';
-@import 'container';
+@import './component/header';
+@import './component/location';
+@import './component/reservation';
+@import './component/container';
 @import'./component/card';
-@import'option-list';
+@import'./component/choice-item-groups';
+@import'./component/restaurant';
+
+
 
 
 

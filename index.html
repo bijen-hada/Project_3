@@ -41,37 +41,73 @@
         </div>
       </div>
     </section>
-    <section class="option-list">
-      <div class="container">
-        <div>
-          <h2>How it works</h2>
-          <div class="card option-list__card">
-            <div class="option-list__card-number">1</div>
-            <div class="option-list__card-title">
-              <i class="fas fa-mobile-alt option-list__card-icon"></i>
-              <h5 class="option-list__card-text">Chose a restaurant</h5>
-            </div>
+    <div class="container">
+      <h2 class="h-big h-ftext">How it works</h2>
+    </div>
+    <div class="container">
+      <div class="choice-item-groups">
+        <div class="choice-item choice-item-groups__choice-item">
+          <div class="choice-item-groups__choice-item-number">1</div>
+          <div class="choice-item-groups__choice-item-title">
+            <i
+              class="fas fa-mobile-alt choice-item-groups__choice-item-icon"
+            ></i>
+            <h5 class="choice-item-groups__choice-item-text">
+              Choose a restaurant
+            </h5>
           </div>
-          <div class="card option-list__card">
-            <div class="option-list__card-number">2</div>
-            <div class="option-list__card-title">
-              <i class="fas fa-list-ul option-list__card-icon"></i>
-              <h5 class="option-list__card-text">Create your menu</h5>
-            </div>
+        </div>
+        <div class="choice-item choice-item-groups__choice-item">
+          <div class="choice-item-groups__choice-item-number">2</div>
+          <div class="choice-item-groups__choice-item-title">
+            <i class="fas fa-list-ul choice-item-groups__choice-item-icon"></i>
+            <h5 class="choice-item-groups__choice-item-text">
+              Create your menu
+            </h5>
           </div>
-          <div class="card option-list__card option-list__card--highlightcolor">
-            <div class="option-list__card-number">3</div>
-            <div class="option-list__card-title">
-              <i
-                class="fas fa-store option-list__card-icon option-list__card-icon--highlightcolor"
-              ></i>
-              <h5 class="option-list__card-text">
-                Go enjoy it at a restaurant
-              </h5>
-            </div>
+        </div>
+        <div
+          class="choice-item choice-item-groups__choice-item--hightlightcolor"
+        >
+          <div class="choice-item-groups__choice-item-number">3</div>
+          <div class="choice-item-groups__choice-item-title">
+            <i
+              class="
+                fas
+                fa-store
+                choice-item-groups__choice-item-icon--hightlightcolor
+              "
+            ></i>
+            <h5 class="choice-item-groups__choice-item-text">
+              Go enjoy at the restaurant
+            </h5>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+<!--Menu component-->
+    <div class="restaurant">
+      <h2>Restaurants</h2>
+    </div>
+    <div class="restaurant__container">
+      <div class="card restaurant__card">
+        <a href=""
+          ><img
+            src="./images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
+            alt="The Full Palette"
+            class="restaurant__card-image"
+        /></a>
+        <div class="restaurant__card-new"><span>New</span></div>
+        <div class="restaurant__card-label">
+          <div class="restaurant__card-information">
+            <h3>The Full Palette</h3>
+            <h4>New York</h4>
+          </div>
+          <div class="restaurant__card-icon">
+            <i class="restaurant__card-icon--heart fas fa-heart"></i>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
