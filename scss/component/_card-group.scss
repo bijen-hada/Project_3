@@ -1,0 +1,41 @@
+.card-group {
+  @include flex-1;
+  flex-wrap: wrap;
+  padding: 2rem 0rem;
+}
+.card {
+  background-color:$color-white;
+  width: 100%;
+  position: relative;
+  margin-bottom: 30px;
+  box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.1);
+  border-radius:20px;
+
+  &__image {
+    display: block;
+    height: 200px;
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+    object-fit: cover;
+  }
+  &__new {
+    width: 8rem;
+    background-color: $color-tertiary;
+    margin: auto;
+    border-radius: 5px;
+    @include flex-1;
+    top: 50px;
+    position: absolute;
+    right: 10px;
+  }
+  &__label {
+    display: flex;
+    padding: 1rem 2rem;
+  }
+  &__information {
+    flex-grow: 1;
+  }
+  &__sidebar {
+    @include flex-1;
+  }
+}

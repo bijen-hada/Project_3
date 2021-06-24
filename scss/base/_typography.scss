@@ -1,27 +1,41 @@
-body{
-  font-family: "Roboto",sans-serif;
+body {
+  font-family: "Roboto", sans-serif;
   font-size: 1.5rem;
-  margin:0;
+  margin: 0;
 }
 
-.h-small{
+.h-small {
   font-weight: 100;
 }
-.h-medium{
+.h-medium {
   font-weight: 400;
 }
-.h-big{
+.h-big {
   font-weight: 700;
 }
 
-.h-ftitle{
+.h-ftitle {
   font-family: $font-title;
 }
 
-.h-ftext{
+.italic{
+  font-style: italic;
+}
+
+.h-ftext {
   font-family: $font-text;
 }
 
-.margin-r{
+.margin-r {
   margin-right: 1.5rem;
 }
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+  }
+  p-0{
+    padding: 0px;
+  }
+

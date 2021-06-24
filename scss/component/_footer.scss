@@ -1,0 +1,29 @@
+.footer {
+  color: $color-white;
+  &__title {
+    margin: 1rem 0rem;
+    color: $color-white;
+    display: inline-block;
+  }
+  &__logo {
+    height: 2rem;
+    padding-top: 1rem;
+    padding-left: 33px;
+    color: $color-white;
+  }
+  &__nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  &__choice {
+    line-height: 2.5rem;
+    &--bold {
+      font-weight: 500;
+    }
+    &-icon {
+      width: 10px;
+      margin-right: 2rem;
+    }
+  }
+}

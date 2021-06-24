@@ -1,0 +1,38 @@
+.menu-item__input {
+  display: none;
+}
+
+.menu-item__card {
+  cursor: pointer;
+  box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.1);
+  position: relative;
+  border-radius: 20px;
+  display: flex;
+  background-color: $color-white;
+}
+
+.menu-item__input:checked + label .menu-item__checked {
+  width: 60px;
+}
+
+.menu-item__body {
+  flex-grow: 1;
+  padding:0 2rem;
+}
+
+.menu-item__title {
+  display: block;
+}
+
+.menu-item__text {
+  display: flex;
+  justify-content: space-between;
+}
+.menu-item__checked {
+  width: 0;
+  overflow: hidden;
+  background-color: $color-tertiary;
+  color: $color-white;
+  border-radius: 0px 20px 20px 0px;
+  position:absolute;
+}

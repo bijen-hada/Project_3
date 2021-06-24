@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&family=Shrikhand&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/0b0cbc6da2.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__back">
+        <a href="./index.html"><i class="fas fa-arrow-left"></i></a>
+      </div>
+      <div>
+        <img src="./images/logo/ohmyfood.png" alt="logo" class="header__logo" />
+      </div>
+    </header>
+
+    <div class="container bg-grey">
+      <div class="menu">
+        <div class="menu__restaurant">
+          <div>
+            <img
+              src="./images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
+              alt="The Full Palette"
+              class="menu__restaurant-image"
+            />
+          </div>
+          <div class="container">
+            <div class="menu__title">
+              <h2 class="h-big h-ftext italic">The Full Palette</h2>
+              <div class="menu__title-icon"><i class="far fa-heart"></i></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--Menu section-->
+      <div class="container">
+        <h4 class="menu-category h-small h-ftext">ENTREES</h4>
+        <div class="menu-item">
+          <input
+            class="menu-item__input"
+            type="checkbox"
+            name="my-checkbox"
+            id="menu-item-1"
+          />
+          <label for="menu-item-1" class="menu-item__card">
+            <span class="menu-item__body">
+              <strong class="menu-item__title">Escargot</strong>
+              <span class="menu-item__text h-small"
+                >With southern French spices<strong>25&euro;</strong></span
+              >
+            </span>
+            <span class="menu-item__checked"
+              ><i class="fas fa-check-circle"></i
+            ></span>
+          </label>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

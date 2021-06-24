@@ -1,5 +1,4 @@
-.choice-item-group{
-    
+.choice-item-group {
   &__choice-item {
     border-radius: 20px;
     position: relative;
@@ -10,30 +9,30 @@
     background-color: $color-lightgrey;
     &--highlight-color {
       background-color: rgba($color-primary, 0.1);
+      .choice-item-group__choice-item-icon {
+        color: $color-primary;
+      }
     }
-  &-title {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    height: 100%;
-  }
-  &-number {
-    background-color: $color-primary;
-    color: $color-white;
-    border-radius: 1000px;
-    position: absolute;
-    padding: 0.25rem 0.75rem;
-    top: 50%;
-    left: 0%;
-    transform: translate(-50%, -50%);
-  }
-  &-icon {
-    color: black;
-    width: 10px;
-    margin: 2rem 3rem;
-    &--highlight-color {
-      color: $color-primary;
+    &-title {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      height: 100%;
+    }
+    &-number {
+      background-color: $color-primary;
+      color: $color-white;
+      border-radius: 1000px;
+      position: absolute;
+      padding: 0.25rem 0.75rem;
+      top: 50%;
+      left: 0%;
+      transform: translate(-50%, -50%);
+    }
+    &-icon {
+      color: black;
+      width: 10px;
+      margin: 2rem 3rem;
     }
   }
-}
 }
