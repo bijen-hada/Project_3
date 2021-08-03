@@ -12,12 +12,12 @@
 }
 
 .menu-item__input:checked + label .menu-item__checked {
-  width: 60px;
+  width: 100px;
 }
 
 .menu-item__body {
   flex-grow: 1;
-  padding:0 2rem;
+  padding: 1rem;
 }
 
 .menu-item__title {
@@ -29,10 +29,13 @@
   justify-content: space-between;
 }
 .menu-item__checked {
+  display: flex;
   width: 0;
   overflow: hidden;
   background-color: $color-tertiary;
   color: $color-white;
   border-radius: 0px 20px 20px 0px;
-  position:absolute;
+  align-items: center;
+  position: relative;
+  justify-content: center;
 }

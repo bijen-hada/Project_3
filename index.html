@@ -17,179 +17,218 @@
     <title>Ohmyfood</title>
   </head>
   <body>
-    <header class="header">
-      <img
-        src="./images/logo/ohmyfood@2x.svg"
-        alt="ohmyfoodlogo"
-        class="header__logo"
-      />
-    </header>
-    <section class="location">
-      <div class="location__icon"><i class="fa fa-map-marker-alt"></i></div>
-      <h5 class="h-medium">Paris, Belleville</h5>
-    </section>
-    <section class="reservation">
-      <div class="container">
-        <div class="reservation__information">
-          <h2 class="h-big h-ftext">Book the menu you like</h2>
-          <h4 class="h-small h-ftext">
-            Discover top-of-the-art restaurants we picked for you
-          </h4>
-          <button class="button button--Explore button--grad">
-            Explore our restaurants
-          </button>
-        </div>
-      </div>
-    </section>
-    <div class="container">
-      <h2 class="h-big h-ftext">How it works</h2>
-    </div>
-    <div class="container">
-      <div class="choice-item-group">
-        <div class="choice-item-group__choice-item">
-          <div class="choice-item-group__choice-item-number">1</div>
-          <div class="choice-item-group__choice-item-title">
-            <i
-              class="fas fa-mobile-alt choice-item-group__choice-item-icon"
-            ></i>
-            <h5 class="choice-item-group__choice-item-text">
-              Choose a restaurant
-            </h5>
-          </div>
-        </div>
-        <div class="choice-item-group__choice-item">
-          <div class="choice-item-group__choice-item-number">2</div>
-          <div class="choice-item-group__choice-item-title">
-            <i class="fas fa-list-ul choice-item-group__choice-item-icon"></i>
-            <h5 class="choice-item-group__choice-item-text">
-              Create your menu
-            </h5>
-          </div>
-        </div>
-        <div
-          class="
-            choice-item-group__choice-item
-            choice-item-group__choice-item--highlight-color
-          "
-        >
-          <div class="choice-item-group__choice-item-number">3</div>
-          <div class="choice-item-group__choice-item-title">
-            <i
-              class="
-                fas
-                fa-store
-                choice-item-group__choice-item-icon
-              "
-            ></i>
-            <h5 class="choice-item-group__choice-item-text">
-              Go enjoy at the restaurant
-            </h5>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!--Menu component-->
-    <div class="bg-grey">
-      <div class = "container">
-      <h2>Restaurants</h2>
+    <article>
+      <!--header component-->
 
-      <div class="card-group">
-        <div class="card">
-          <a href="./Thefullpalette.html"
-            ><img
-              src="./images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
-              alt="The Full Palette"
-              class="card__image"
-          /></a>
-          <div class="card__new"><span>New</span></div>
-          <div class="card__label">
-            <div class="card__information">
-              <h3>The Full Palette</h3>
-              <h4 class="h-small h-ftext">New York</h4>
+      <header>
+        <div class="container">
+          <div class="header py-2">
+            <img
+              src="./images/logo/ohmyfood@2x.svg"
+              alt="ohmyfoodlogo"
+              class="header__logo"
+            />
+          </div>
+        </div>
+      </header>
+      <section class="bg-grey-shadow">
+        <div class="container">
+          <div class="location">
+            <div class="location__icon">
+              <i class="fa fa-map-marker-alt"></i>
             </div>
-            <div class="card__sidebar">
-              <div class="checkbox-heart">
-                <i class="checkbox-heart__icon far fa-heart"></i>
+            <h5 class="h-medium">Paris, Belleville</h5>
+          </div>
+        </div>
+
+        <!--reservation component-->
+      </section>
+      <section class="bg-light-grey py-5">
+        <div class="container">
+          <div class="reservation">
+            <div class="reservation__information">
+              <h2 class="h-big h-ftext">Book the menu you like</h2>
+              <h4 class="h-small h-ftext">
+                Discover top-of-the-art restaurants we picked for you
+              </h4>
+              <button class="button button--Explore button--grad">
+                Explore our restaurants
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--Choice items component-->
+      <section class="py-5">
+        <div class="container">
+          <h2 class="h-big h-ftext">How it works</h2>
+          <div class="choice-item-group">
+            <div class="choice-item-group__choice-item">
+              <div class="choice-item-group__choice-item-number">1</div>
+              <div class="choice-item-group__choice-item-title">
+                <i
+                  class="fas fa-mobile-alt choice-item-group__choice-item-icon"
+                ></i>
+                <h5 class="choice-item-group__choice-item-text">
+                  Choose a restaurant
+                </h5>
+              </div>
+            </div>
+            <div class="choice-item-group__choice-item">
+              <div class="choice-item-group__choice-item-number">2</div>
+              <div class="choice-item-group__choice-item-title">
+                <i
+                  class="fas fa-list-ul choice-item-group__choice-item-icon"
+                ></i>
+                <h5 class="choice-item-group__choice-item-text">
+                  Create your menu
+                </h5>
+              </div>
+            </div>
+            <div
+              class="
+                choice-item-group__choice-item
+                choice-item-group__choice-item--highlight-color
+              "
+            >
+              <div class="choice-item-group__choice-item-number">3</div>
+              <div class="choice-item-group__choice-item-title">
+                <i class="fas fa-store choice-item-group__choice-item-icon"></i>
+                <h5 class="choice-item-group__choice-item-text">
+                  Go enjoy at the restaurant
+                </h5>
               </div>
             </div>
           </div>
         </div>
-        <div class="card">
-          <a href=""
-            ><img
-              src="./images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg"
-              alt="The Enchanted Plate"
-              class="card__image"
-          /></a>
-          <div class="card__new"><span>New</span></div>
-          <div class="card__label">
-            <div class="card__information">
-              <h3>The Enchanted Plate</h3>
-              <h4 class="h-small h-ftext">New York</h4>
+      </section>
+      <!--Menu component-->
+      <section class="bg-light-grey py-5">
+        <div class="container">
+          <h2>Restaurants</h2>
+
+          <div class="card-group">
+            <div class="card">
+              <a href="./Thefullpalette.html"
+                ><img
+                  src="./images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
+                  alt="The Full Palette"
+                  class="card__image"
+              /></a>
+              <div class="card__new"><span>New</span></div>
+              <div class="card__label">
+                <div class="card__information">
+                  <h3>The Full Palette</h3>
+                  <h4 class="h-small h-ftext">New York</h4>
+                </div>
+                <div class="card__sidebar">
+                  <div class="checkbox-heart">
+                    <input class="checkbox-heart__input" type="checkbox" name="my-checkbox" id="Checkbox-heart-1">
+                    <label class="checkbox-heart__label" for="Checkbox-heart-1">
+                      <span class="checkbox-heart__icon-on fas fa-heart"></span>
+                      <span class="checkbox-heart__icon-off far fa-heart"></span>
+                    </label>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="card__sidebar">
-              <div class="checkbox-heart">
-                <i class="checkbox-heart__icon far fa-heart"></i>
+            <div class="card">
+              <a href=""
+                ><img
+                  src="./images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg"
+                  alt="The Enchanted Plate"
+                  class="card__image"
+              /></a>
+              <div class="card__new"><span>New</span></div>
+              <div class="card__label">
+                <div class="card__information">
+                  <h3>The Enchanted Plate</h3>
+                  <h4 class="h-small h-ftext">New York</h4>
+                </div>
+                <div class="card__sidebar">
+                  <div class="checkbox-heart">
+                    <input class="checkbox-heart__input" type="checkbox" name="my-checkbox" id="Checkbox-heart-2">
+                    <label class="checkbox-heart__label" for="Checkbox-heart-2">
+                      <span class="checkbox-heart__icon-on fas fa-heart"></span>
+                      <span class="checkbox-heart__icon-off far fa-heart"></span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <a href=""
+                ><img
+                  src="./images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
+                  alt="Bastille"
+                  class="card__image"
+              /></a>
+              <div class="card__new"><span>New</span></div>
+              <div class="card__label">
+                <div class="card__information">
+                  <h3>Bastille</h3>
+                  <h4 class="h-small h-ftext">New York</h4>
+                </div>
+                <div class="card__sidebar">
+                  <div class="checkbox-heart">
+                    <input class="checkbox-heart__input" type="checkbox" name="my-checkbox" id="Checkbox-heart-3">
+                    <label class="checkbox-heart__label" for="Checkbox-heart-3">
+                      <span class="checkbox-heart__icon-on fas fa-heart"></span>
+                      <span class="checkbox-heart__icon-off far fa-heart"></span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <a href=""
+                ><img
+                  src="./images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
+                  alt="Le Gourmand"
+                  class="card__image"
+              /></a>
+              <div class="card__new"><strong>New</strong></div>
+              <div class="card__label">
+                <div class="card__information">
+                  <h3>Le Gourmand</h3>
+                  <h4 class="h-small h-ftext">New York</h4>
+                </div>
+                <div class="card__sidebar">
+                  <div class="checkbox-heart">
+                    <input class="checkbox-heart__input" type="checkbox" name="my-checkbox" id="Checkbox-heart-4">
+                    <label class="checkbox-heart__label" for="Checkbox-heart-4">
+                      <span class="checkbox-heart__icon-on fas fa-heart"></span>
+                      <span class="checkbox-heart__icon-off far fa-heart"></span>
+                    </label>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="card">
-          <a href=""
-            ><img
-              src="./images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
-              alt="Bastille"
-              class="card__image"
-          /></a>
-          <div class="card__new"><span>New</span></div>
-          <div class="card__label">
-            <div class="card__information">
-              <h3>Bastille</h3>
-              <h4 class="h-small h-ftext">New York</h4>
-            </div>
-            <div class="card__sidebar">
-              <div class="checkbox-heart">
-                <i class="checkbox-heart__icon far fa-heart"></i>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <a href=""
-            ><img
-              src="./images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
-              alt="Le Gourmand"
-              class="card__image"
-          /></a>
-          <div class="card__new"><span>New</span></div>
-          <div class="card__label">
-            <div class="card__information">
-              <h3>Le Gourmand</h3>
-              <h4 class="h-small h-ftext">New York</h4>
-            </div>
-            <div class="card__sidebar">
-              <div class="checkbox-heart">
-                <i class="checkbox-heart__icon far fa-heart"></i>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-    <footer class="bg-black">    
-      <div class="container footer">
+      </section>
+      <footer class="bg-black py-5">
+        <div class="container footer">
           <div class="footer__title">
-              <div class ="h-ftitle"><h2>ohmyfood</h2>
-              </div>
+            <div class="h-ftitle"><h2>ohmyfood</h2></div>
           </div>
           <ol class="footer__nav">
-              <li class="footer__choice footer__choice--bold"><i class="fas fa-utensils footer__choice-icon"></i>Suggest a restaurant</li>
-              <li class="footer__choice footer__choice--bold"><i class="fas fa-hands-helping footer__choice-icon"></i>Become a partner</li>
-              <li class="footer__choice">Legal</li>
-              <li class="footer__choice"><a href="mailto:abc@example.com">Contact</a></li>
+            <li class="footer__choice footer__choice--bold">
+              <i class="fas fa-utensils footer__choice-icon"></i>Suggest a
+              restaurant
+            </li>
+            <li class="footer__choice footer__choice--bold">
+              <i class="fas fa-hands-helping footer__choice-icon"></i>Become a
+              partner
+            </li>
+            <li class="footer__choice">Legal</li>
+            <li class="footer__choice">
+              <a href="mailto:abc@example.com">Contact</a>
+            </li>
           </ol>
-      </div>
-  </footer>
+        </div>
+      </footer>
+    </article>
   </body>
 </html>

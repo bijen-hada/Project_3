@@ -1,6 +1,4 @@
 .reservation {
-  background-color: $color-lightgrey;
-  height: 30rem;
   &__information {
     @include flex-2;
     height: 100%;

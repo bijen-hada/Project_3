@@ -19,14 +19,15 @@
     object-fit: cover;
   }
   &__new {
-    width: 8rem;
     background-color: $color-tertiary;
     margin: auto;
     border-radius: 5px;
     @include flex-1;
-    top: 50px;
+    top: 21px;
     position: absolute;
-    right: 10px;
+    right: 23px;
+    padding: 8px 25px;
+    color: #018769;
   }
   &__label {
     display: flex;
@@ -35,7 +36,10 @@
   &__information {
     flex-grow: 1;
   }
-  &__sidebar {
+  &__sidebar{
     @include flex-1;
   }
 }
+
+
+

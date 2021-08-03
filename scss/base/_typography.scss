@@ -18,13 +18,18 @@ body {
   font-family: $font-title;
 }
 
-.italic{
+.italic {
   font-style: italic;
 }
 
 .h-ftext {
   font-family: $font-text;
 }
+
+.h-ffamily{
+  font-family: shrikhand;
+}
+
 
 .margin-r {
   margin-right: 1.5rem;
@@ -34,8 +39,29 @@ a {
   cursor: pointer;
   text-decoration: none;
   color: inherit;
-  }
-  p-0{
-    padding: 0px;
-  }
+}
+.p-0 {
+  padding: 0px;
+}
 
+.bg-dark-grey {
+  background-color: $color-darkgrey;
+}
+.py-5 {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.py-2 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.mt-n3 {
+  margin-top: -50px !important;
+}
+
+.border-radius-top {
+  border-radius: 50px 50px 0 0;
+}
+.p-15{
+  padding: 25px;
+}

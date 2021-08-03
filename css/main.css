@@ -38,14 +38,41 @@ a {
   color: inherit;
 }
 
-p-0 {
+.p-0 {
   padding: 0px;
+}
+
+.bg-dark-grey {
+  background-color: #E8E8E8;
+}
+
+.py-5 {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.py-2 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.mt-n3 {
+  margin-top: -50px !important;
+}
+
+.border-radius-top {
+  border-radius: 50px 50px 0 0;
+}
+
+.p-15 {
+  padding: 25px;
 }
 
 .button {
   border: 0 none;
   border-radius: 0.3rem;
   padding: 0.3rem 0.5rem;
+  margin: 30px 0;
 }
 
 .button--Explore {
@@ -56,6 +83,17 @@ p-0 {
   -webkit-box-shadow: 0px 0px 8px #888888;
           box-shadow: 0px 0px 8px #888888;
   cursor: pointer;
+}
+
+.button--Order {
+  font-size: 25px;
+  border-radius: 100px;
+  border: none;
+  padding: 1.5rem 7rem;
+  -webkit-box-shadow: 0px 0px 8px #888888;
+          box-shadow: 0px 0px 8px #888888;
+  cursor: pointer;
+  margin: 50px  0;
 }
 
 .button:hover {
@@ -85,10 +123,7 @@ p-0 {
       -ms-flex-pack: center;
           justify-content: center;
   width: 100%;
-  height: 5rem;
   position: relative;
-  -webkit-box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.1);
-          box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.1);
 }
 
 .header__logo {
@@ -96,12 +131,21 @@ p-0 {
 }
 
 .header__back {
-  -webkit-transform: translate(50%, -50%);
-          transform: translate(50%, -50%);
   position: absolute;
-  top: 50%;
-  left: 5%;
+  bottom: 0;
+  top: 0;
+  left: 0;
   font-size: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 53px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .location {
@@ -116,16 +160,10 @@ p-0 {
           justify-content: center;
   width: 100%;
   height: 5rem;
-  background-color: #E8E8E8;
 }
 
 .location__icon {
   margin-right: 1.5rem;
-}
-
-.reservation {
-  background-color: #F8F8F8;
-  height: 30rem;
 }
 
 .reservation__information {
@@ -238,7 +276,6 @@ p-0 {
 }
 
 .card__new {
-  width: 8rem;
   background-color: #99e2d0;
   margin: auto;
   border-radius: 5px;
@@ -251,9 +288,11 @@ p-0 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  top: 50px;
+  top: 21px;
   position: absolute;
-  right: 10px;
+  right: 23px;
+  padding: 8px 25px;
+  color: #018769;
 }
 
 .card__label {
@@ -281,14 +320,29 @@ p-0 {
           justify-content: center;
 }
 
-.bg-grey {
+.bg-light-grey {
   background-color: #F8F8F8;
 }
 
-.checkbox-heart__icon {
-  cursor: pointer;
-  -webkit-transition: all 300ms;
-  transition: all 300ms;
+.bg-grey-shadow {
+  background: -webkit-gradient(linear, left bottom, left top, from(#e8e8e8), color-stop(95%, #e8e8e8), to(#e2e1e1));
+  background: linear-gradient(0deg, #e8e8e8 0%, #e8e8e8 95%, #e2e1e1 100%);
+}
+
+.checkbox-heart .checkbox-heart__input {
+  display: none;
+}
+
+.checkbox-heart .checkbox-heart__input:checked + .checkbox-heart__label .checkbox-heart__icon-on {
+  display: inline;
+}
+
+.checkbox-heart .checkbox-heart__input:checked + .checkbox-heart__label .checkbox-heart__icon-off {
+  display: none;
+}
+
+.checkbox-heart .checkbox-heart__icon-on {
+  display: none;
 }
 
 .footer {
@@ -299,13 +353,6 @@ p-0 {
   margin: 1rem 0rem;
   color: #FFFFFF;
   display: inline-block;
-}
-
-.footer__logo {
-  height: 2rem;
-  padding-top: 1rem;
-  padding-left: 33px;
-  color: #FFFFFF;
 }
 
 .footer__nav {
@@ -391,14 +438,14 @@ p-0 {
 }
 
 .menu-item__input:checked + label .menu-item__checked {
-  width: 60px;
+  width: 100px;
 }
 
 .menu-item__body {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
-  padding: 0 2rem;
+  padding: 1rem;
 }
 
 .menu-item__title {
@@ -415,12 +462,21 @@ p-0 {
 }
 
 .menu-item__checked {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   width: 0;
   overflow: hidden;
   background-color: #99e2d0;
   color: #FFFFFF;
   border-radius: 0px 20px 20px 0px;
-  position: absolute;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .menu-category {
@@ -429,5 +485,24 @@ p-0 {
   width: 60px;
   border-bottom: 4px solid #99e2d0;
   padding-bottom: 20px;
+}
+
+.header-image {
+  background-image: url(../../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+  background-size: cover;
+  display: block;
+  height: 300px;
+}
+
+.title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 /*# sourceMappingURL=main.css.map */

@@ -16,57 +16,235 @@
     ></script>
   </head>
   <body>
-    <header class="header">
-      <div class="header__back">
-        <a href="./index.html"><i class="fas fa-arrow-left"></i></a>
-      </div>
-      <div>
-        <img src="./images/logo/ohmyfood.png" alt="logo" class="header__logo" />
+    <header class="header py-2">
+      <div class="container">
+        <div class="header__back">
+          <a href="./index.html"><i class="fas fa-arrow-left"></i></a>
+        </div>
+        <div>
+          <img
+            src="./images/logo/ohmyfood.png"
+            alt="logo"
+            class="header__logo"
+          />
+        </div>
       </div>
     </header>
 
-    <div class="container bg-grey">
-      <div class="menu">
-        <div class="menu__restaurant">
-          <div>
-            <img
-              src="./images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
-              alt="The Full Palette"
-              class="menu__restaurant-image"
-            />
-          </div>
-          <div class="container">
-            <div class="menu__title">
-              <h2 class="h-big h-ftext italic">The Full Palette</h2>
-              <div class="menu__title-icon"><i class="far fa-heart"></i></div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!--Menu section-->
-      <div class="container">
-        <h4 class="menu-category h-small h-ftext">ENTREES</h4>
-        <div class="menu-item">
-          <input
-            class="menu-item__input"
-            type="checkbox"
-            name="my-checkbox"
-            id="menu-item-1"
-          />
-          <label for="menu-item-1" class="menu-item__card">
-            <span class="menu-item__body">
-              <strong class="menu-item__title">Escargot</strong>
-              <span class="menu-item__text h-small"
-                >With southern French spices<strong>25&euro;</strong></span
-              >
-            </span>
-            <span class="menu-item__checked"
-              ><i class="fas fa-check-circle"></i
-            ></span>
+    <div class="header-image"></div>
+    <div class="container bg-light-grey border-radius-top mt-n3 p-15">
+      <div class="title">
+        <h2 class="title h-big h-ftitle">The Full Palette</h2>
+        <div class="checkbox-heart">
+          <input class="checkbox-heart__input" type="checkbox" name="my-checkbox" id="checkbox-heart-5">
+          <label class="checkbox-heart__label" for="checkbox-heart-5">
+            <span class="checkbox-heart__icon-on fas fa-heart"></span>
+            <span class="checkbox-heart__icon-off far fa-heart"></span>
           </label>
         </div>
       </div>
+      <h5 class="menu-category h-small h-ftext">ENTREES</h5>
+      <div class="menu-item">
+        <input
+          class="menu-item__input"
+          type="checkbox"
+          name="my-checkbox"
+          id="menu-item-1"
+        />
+        <label for="menu-item-1" class="menu-item__card">
+          <span class="menu-item__body">
+            <strong class="menu-item__title">Escargot</strong>
+            <span class="menu-item__text h-small"
+              >With southern French spices<strong>25&euro;</strong></span
+            >
+          </span>
+          <span class="menu-item__checked"
+            ><i class="fas fa-check-circle"></i
+          ></span>
+        </label>
+      </div>
+      <div class="menu-item py-2">
+        <input
+          class="menu-item__input"
+          type="checkbox"
+          name="my-checkbox"
+          id="menu-item-2"
+        />
+        <label for="menu-item-2" class="menu-item__card">
+          <span class="menu-item__body">
+            <strong class="menu-item__title">Duck Foie Gras</strong>
+            <span class="menu-item__text h-small"
+              >With black truffle shavings<strong>35&euro;</strong></span
+            >
+          </span>
+          <span class="menu-item__checked"
+            ><i class="fas fa-check-circle"></i
+          ></span>
+        </label>
+      </div>
+      <div class="menu-item">
+        <input
+          class="menu-item__input"
+          type="checkbox"
+          name="my-checkbox"
+          id="menu-item-3"
+        />
+        <label for="menu-item-3" class="menu-item__card">
+          <span class="menu-item__body">
+            <strong class="menu-item__title">Fried egg</strong>
+            <span class="menu-item__text h-small"
+              >...<strong>20&euro;</strong></span
+            >
+          </span>
+          <span class="menu-item__checked"
+            ><i class="fas fa-check-circle"></i
+          ></span>
+        </label>
+      </div>
+      <h5 class="menu-category h-small h-ftext py-2">MAIN_DISH</h5>
+      <div class="menu-item">
+        <input
+          class="menu-item__input"
+          type="checkbox"
+          name="my-checkbox"
+          id="menu-item-4"
+        />
+        <label for="menu-item-4" class="menu-item__card">
+          <span class="menu-item__body">
+            <strong class="menu-item__title">Herb-Encrusted Steak</strong>
+            <span class="menu-item__text h-small"
+              >With delicately sliced and seasoned veg<strong
+                >40&euro;</strong
+              ></span
+            >
+          </span>
+          <span class="menu-item__checked"
+            ><i class="fas fa-check-circle"></i
+          ></span>
+        </label>
+      </div>
+      <div class="menu-item py-2">
+        <input
+          class="menu-item__input"
+          type="checkbox"
+          name="my-checkbox"
+          id="menu-item-5"
+        />
+        <label for="menu-item-5" class="menu-item__card">
+          <span class="menu-item__body">
+            <strong class="menu-item__title">Ox Tail Shepard's Pie</strong>
+            <span class="menu-item__text h-small"
+              >With black truffle and pureed parsnips<strong
+                >35&euro;</strong
+              ></span
+            >
+          </span>
+          <span class="menu-item__checked"
+            ><i class="fas fa-check-circle"></i
+          ></span>
+        </label>
+      </div>
+      <div class="menu-item">
+        <input
+          class="menu-item__input"
+          type="checkbox"
+          name="my-checkbox"
+          id="menu-item-6"
+        />
+        <label for="menu-item-6" class="menu-item__card">
+          <span class="menu-item__body">
+            <strong class="menu-item__title">Filet of Sole</strong>
+            <span class="menu-item__text h-small"
+              >With citrus dressing<strong>44&euro;</strong></span
+            >
+          </span>
+          <span class="menu-item__checked"
+            ><i class="fas fa-check-circle"></i
+          ></span>
+        </label>
+      </div>
+      <h5 class="menu-category h-small h-ftext py-2">DESSERTS</h5>
+      <div class="menu-item">
+        <input
+          class="menu-item__input"
+          type="checkbox"
+          name="my-checkbox"
+          id="menu-item-7"
+        />
+        <label for="menu-item-7" class="menu-item__card">
+          <span class="menu-item__body">
+            <strong class="menu-item__title">Paris-Brest</strong>
+            <span class="menu-item__text h-small"
+              >Revisted<strong>18&euro;</strong></span
+            >
+          </span>
+          <span class="menu-item__checked"
+            ><i class="fas fa-check-circle"></i
+          ></span>
+        </label>
+      </div>
+      <div class="menu-item py-2">
+        <input
+          class="menu-item__input"
+          type="checkbox"
+          name="my-checkbox"
+          id="menu-item-8"
+        />
+        <label for="menu-item-8" class="menu-item__card">
+          <span class="menu-item__body">
+            <strong class="menu-item__title">Chocolate Macaroons</strong>
+            <span class="menu-item__text h-small"
+              >With vanilla ice cream<strong>22&euro;</strong></span
+            >
+          </span>
+          <span class="menu-item__checked"
+            ><i class="fas fa-check-circle"></i
+          ></span>
+        </label>
+      </div>
+      <div class="menu-item">
+        <input
+          class="menu-item__input"
+          type="checkbox"
+          name="my-checkbox"
+          id="menu-item-9"
+        />
+        <label for="menu-item-9" class="menu-item__card">
+          <span class="menu-item__body">
+            <strong class="menu-item__title">Chocolate Mousse</strong>
+            <span class="menu-item__text h-small"
+              >With spices and black truffle<strong>20&euro;</strong></span
+            >
+          </span>
+          <span class="menu-item__checked"
+            ><i class="fas fa-check-circle"></i
+          ></span>
+        </label>
+      </div>
+      <div>
+        <button class="button button--Order button--grad py-2">Order</button>
+      </div>
     </div>
+    <footer class="bg-black py-5">
+      <div class="container footer">
+        <div class="footer__title">
+          <div class="h-ftitle"><h2>ohmyfood</h2></div>
+        </div>
+        <ol class="footer__nav">
+          <li class="footer__choice footer__choice--bold">
+            <i class="fas fa-utensils footer__choice-icon"></i>Suggest a
+            restaurant
+          </li>
+          <li class="footer__choice footer__choice--bold">
+            <i class="fas fa-hands-helping footer__choice-icon"></i>Become a
+            partner
+          </li>
+          <li class="footer__choice">Legal</li>
+          <li class="footer__choice">
+            <a href="mailto:abc@example.com">Contact</a>
+          </li>
+        </ol>
+      </div>
+    </footer>
   </body>
 </html>
