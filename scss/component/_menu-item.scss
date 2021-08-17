@@ -13,8 +13,10 @@
 
 .menu-item__input:checked + label .menu-item__checked {
   width: 100px;
+  transform: rotate(360deg);
+  opacity: 1;
+  transition: all 0.5s ease;
 }
-
 .menu-item__body {
   flex-grow: 1;
   padding: 1rem;
@@ -38,4 +40,34 @@
   align-items: center;
   position: relative;
   justify-content: center;
+  transform: rotate(360deg) scale(1);
+  transition: all 1s;
+}
+.menu-item--fade {
+  animation-name: menu-item-fade;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+.menu-item--fade-1 {
+  animation-delay: 0.1s;
+}
+.menu-item--fade-2 {
+  animation-delay: 0.2s;
+}
+.menu-item--fade-3 {
+  animation-delay: 0.3s;
+}
+
+@keyframes menu-item-fade {
+  0% {
+    opacity: 0;
+    transform: translate(0, 200px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
 }

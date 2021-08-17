@@ -37,7 +37,7 @@
     flex-grow: 1;
   }
   &__sidebar{
-    @include flex-1;
+    @include flex-1; 
   }
 }
 
