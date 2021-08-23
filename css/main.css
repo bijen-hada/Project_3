@@ -574,8 +574,8 @@ a {
   padding-bottom: 20px;
 }
 
-.header-image {
-  background-image: url(../../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+.header-image-Thefullpalette {
+  background-image: url(../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
   background-size: cover;
   display: block;
   height: 300px;
@@ -594,14 +594,14 @@ a {
 }
 
 .header-image-Enchanted {
-  background-image: url(../../images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
+  background-image: url(../images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
   background-size: cover;
   display: block;
   height: 300px;
 }
 
 .header-image-bastille {
-  background-image: url(../../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
+  background-image: url(../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
   background-size: cover;
   display: block;
   height: 300px;
