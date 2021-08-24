@@ -21,10 +21,14 @@
   0% {
     opacity: 1;
   }
-  100% {
-		display: none;
+  99% {
     opacity: 0;
-    z-index: 0;
+    top:0;
+    bottom: 0;
+  }
+  100% {
+	top: -10000px;
+  bottom:auto;
   }
 }
 .lds-ring {
