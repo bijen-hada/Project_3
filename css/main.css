@@ -461,6 +461,7 @@ a {
   display: -ms-flexbox;
   display: flex;
   background-color: #FFFFFF;
+  overflow: hidden;
 }
 
 .menu-item__input:checked + label .menu-item__checked {
