@@ -466,11 +466,11 @@ a {
 
 .menu-item__input:checked + label .menu-item__checked {
   width: 100px;
-  -webkit-transform: rotate(360deg);
-          transform: rotate(360deg);
-  opacity: 1;
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
+}
+
+.menu-item__input:checked + label .menu-item__checked__fas {
+  -webkit-transform: rotate(0);
+          transform: rotate(0);
 }
 
 .menu-item__body {
@@ -501,7 +501,6 @@ a {
   overflow: hidden;
   background-color: #99e2d0;
   color: #FFFFFF;
-  border-radius: 0px 20px 20px 0px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -509,10 +508,17 @@ a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-transform: rotate(360deg) scale(1);
-          transform: rotate(360deg) scale(1);
-  -webkit-transition: all 1s;
-  transition: all 1s;
+  -webkit-transition: width 1s;
+  transition: width 1s;
+}
+
+.menu-item__checked__fas {
+  -webkit-transform: rotate(360);
+          transform: rotate(360);
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
 }
 
 .menu-item--fade {
@@ -618,7 +624,7 @@ a {
 
 .loader {
   background-color: #fff;
-  position: absolute;
+  position: fixed;
   top: 0;
   bottom: 0;
   left: 0;
@@ -632,8 +638,8 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-transform: opacity 2s;
-          transform: opacity 2s;
+  -webkit-transition: opacity 2s;
+  transition: opacity 2s;
   -webkit-animation-name: loader-fade;
           animation-name: loader-fade;
   -webkit-animation-duration: 2s;
@@ -644,6 +650,7 @@ a {
           animation-iteration-count: 1;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
+  z-index: 1;
 }
 
 @-webkit-keyframes loader-fade {
@@ -653,6 +660,7 @@ a {
   100% {
     display: none;
     opacity: 0;
+    z-index: 0;
   }
 }
 
@@ -663,6 +671,7 @@ a {
   100% {
     display: none;
     opacity: 0;
+    z-index: 0;
   }
 }
 

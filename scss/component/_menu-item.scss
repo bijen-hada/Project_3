@@ -14,10 +14,9 @@
 
 .menu-item__input:checked + label .menu-item__checked {
   width: 100px;
-  transform: rotate(360deg);
-  opacity: 1;
-  transition: all 0.5s ease;
-  
+  &__fas{
+    transform: rotate(0);
+  }
 }
 .menu-item__body {
   flex-grow: 1;
@@ -38,12 +37,14 @@
   overflow: hidden;
   background-color: $color-tertiary;
   color: $color-white;
-  border-radius: 0px 20px 20px 0px;
   align-items: center;
   position: relative;
   justify-content: center;
-  transform: rotate(360deg) scale(1);
-  transition: all 1s;
+  transition: width 1s;
+  &__fas{
+    transform: rotate(360);
+    transition: transform 1s;
+  }
 }
 .menu-item--fade {
   animation-name: menu-item-fade;
