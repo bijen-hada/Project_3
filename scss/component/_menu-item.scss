@@ -1,3 +1,4 @@
+
 .menu-item__input {
   display: none;
 }
@@ -10,30 +11,48 @@
   display: flex;
   background-color: $color-white;
   overflow: hidden;
+
 }
 
 .menu-item__input:checked + label .menu-item__checked {
   width: 100px;
-  .fas{
+  .fas {
     transform: rotate(0deg);
   }
 }
 .menu-item__body {
-  flex-grow: 1;
+  width: 100%;
   padding: 1rem;
+  overflow: hidden;
+
 }
 
 .menu-item__title {
   display: block;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 .menu-item__text {
+  display: block;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.menu-item__price{
   display: flex;
-  justify-content: space-between;
+  align-items: center;
+  width: 80px;
+  justify-content: center;
+
 }
 .menu-item__checked {
   display: flex;
   width: 0;
+  text-overflow: ellipsis;
+  white-space: nowrap;
   overflow: hidden;
   background-color: $color-tertiary;
   color: $color-white;
@@ -41,7 +60,7 @@
   position: relative;
   justify-content: center;
   transition: width 1s;
-  .fas{
+  .fas {
     transform: rotate(360deg);
     transition: transform 1s;
   }

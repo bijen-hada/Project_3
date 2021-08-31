@@ -14,7 +14,8 @@
           $color-secondary,
           $color-primary
         );
-        background-clip: text;
+        
+        -moz-background-clip: text;
        -webkit-background-clip: text;
 
         color: transparent;

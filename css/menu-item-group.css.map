@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,gBAAgB,CAAA;EACZ,OAAO,EAAE,IAAI;CAKhB;;AAJG,MAAM,EAAE,SAAS,EAAE,KAAK;EAF5B,AAAA,gBAAgB,CAAA;IAGV,qBAAqB,EAAE,cAAa;IACpC,UAAU,EAAE,IAAI;GAErB",
+    "sources": [
+        "../scss/component/menu-item-group.scss"
+    ],
+    "names": [],
+    "file": "menu-item-group.css"
+}

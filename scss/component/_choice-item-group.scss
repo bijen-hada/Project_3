@@ -1,7 +1,4 @@
 .choice-item-group {
-  @media (min-width: 1024px) {
-    display: flex;
-  }
   &__choice-item {
     border-radius: 20px;
     position: relative;
@@ -10,11 +7,7 @@
     margin: 2rem 0rem 2rem 1rem;
     height: 5rem;
     background-color: $color-lightgrey;
-    @media (min-width: 1024px) {
-      flex: 1;
-      margin: 0px;
-      margin-left: 32px;
-    }
+
     &--highlight-color {
       background-color: rgba($color-primary, 0.1);
       .choice-item-group__choice-item-icon {
@@ -42,8 +35,8 @@
       width: 10px;
       margin: 2rem 3rem;
     }
-    &-text{
-    text-overflow: ellipsis
+    &-text {
+      text-overflow: ellipsis;
     }
   }
 }

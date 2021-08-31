@@ -1,0 +1,14 @@
+.menu-item-group {
+  display: -ms-grid;
+  display: grid;
+}
+
+@media (min-width: 64rem) {
+  .menu-item-group {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    -webkit-column-gap: 1rem;
+            column-gap: 1rem;
+  }
+}
+/*# sourceMappingURL=menu-item-group.css.map */
