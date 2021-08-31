@@ -256,7 +256,7 @@ a {
 .card-group {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[1];
+  -ms-grid-columns: 1fr;
       grid-template-columns: repeat(1, 1fr);
   -webkit-column-gap: 2rem;
           column-gap: 2rem;
@@ -265,7 +265,7 @@ a {
 
 @media (min-width: 64rem) {
   .card-group {
-    -ms-grid-columns: (1fr)[2];
+    -ms-grid-columns: 1fr 1fr;
         grid-template-columns: repeat(2, 1fr);
   }
 }
